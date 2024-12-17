@@ -17,7 +17,7 @@ public function query($sql){
 
 
 // SAgatavot statament
-$statement = $this->pdo->prepare("SELECT * FROM children");
+$statement = $this->pdo->prepare($sql);
 //izpildīt vaicājumi
 $statement->execute();
 
